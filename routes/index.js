@@ -13,13 +13,14 @@
 // element from our Express dependency.
 var express = require('express');
 var router = express.Router();
+const { name } = require('../config/webserver.json')
 
 // This is a GET request for the homepage
 // of our application. This simply calls
 // a render function to send the data to
 // the client visiting our site.
 router.get('/', function(req, res, next) {
-  res.render('index', { title: /* We can declare page variables here. */ 'Express' });
+  res.render('index', { title: /* We can declare page variables here. */ name });
 });
 
 module.exports = router;
