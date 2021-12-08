@@ -1,0 +1,19 @@
+{
+  "name": "site",
+  "version": "0.0.1",
+  "description": "The landing page for pterostudio.com",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pterostudio/site.git"
+  },
+  "author": "Cam White <cam@pterostudio.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pterostudio/site/issues"
+  },
+  "homepage": "https://github.com/pterostudio/site#readme"
+}
