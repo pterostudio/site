@@ -1,3 +1,13 @@
+'use strict'
+
+/* 
+/ pterostudio/site
+/ ----------------
+/ Last Updated 08/12/21
+/ https://github.com/pterostudio/site
+/ 
+*/
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
