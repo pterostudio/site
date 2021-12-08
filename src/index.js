@@ -1,3 +1,5 @@
+'use strict'
+
 /* 
 / pterostudio/site
 / ----------------
@@ -6,4 +8,16 @@
 / 
 */
 
-// This is currently a placeholder file.
+const express = require('express')
+const webserver = require('../config/webserver.json')
+
+const app = express()
+const port = webserver.port
+
+app.get('/', (req, res) => {
+  res.send('pterostudio/site test site')
+})
+
+app.listen(port, () => {
+  console.log(`[express] Listening on port ${port}.`)
+})
