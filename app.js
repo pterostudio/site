@@ -21,7 +21,6 @@ var logger = require('morgan');
 // We also need to import our routers, so the app
 // knows where to route certain requests.
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
 
 // Create the express application to use.
 var app = express();
@@ -39,7 +38,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Declare default routes for this application.
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler.
 app.use(function(req, res, next) {
