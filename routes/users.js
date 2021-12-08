@@ -8,10 +8,16 @@
 / 
 */
 
+// Let's import our dependencies for this
+// application and  import the Router
+// element from our Express dependency.
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+// This is a GET request for the user list
+// of our application. This simply calls
+// a render function to send the data to
+// the client visiting our site.
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
